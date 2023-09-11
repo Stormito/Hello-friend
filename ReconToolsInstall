@@ -6,7 +6,8 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 #by APT
-apt install pip
+apt update && apt upgrade -y
+apt install pip -y
 
 #httpx install
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
